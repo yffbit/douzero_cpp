@@ -1,0 +1,18 @@
+device=cpu
+# [landlord,landlord_down,landlord_up] model path
+# agent1 model path
+agent1_0=D:/Project/DouZero/baselines/douzero_WP/landlord.ckpt.cupt
+agent1_1=D:/Project/DouZero/baselines/douzero_WP/landlord_down.ckpt.cupt
+agent1_2=D:/Project/DouZero/baselines/douzero_WP/landlord_up.ckpt.cupt
+# is torch script model? python code 'torch.jit.script'
+agent1_jit=true
+
+# agent2 model path
+agent2_0=D:/Project/douzero_cpp/checkpoints/douzero_wp/cppmodel_0_35200.pt
+agent2_1=D:/Project/douzero_cpp/checkpoints/douzero_wp/cppmodel_1_93600.pt
+agent2_2=D:/Project/douzero_cpp/checkpoints/douzero_wp/cppmodel_2_44000.pt
+agent2_jit=false
+
+num_threads=5
+num_games=5000
+save_path=game_data/test.txt
