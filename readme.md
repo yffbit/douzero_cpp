@@ -1,12 +1,12 @@
 # [DouZero](https://github.com/kwai/DouZero)的cpp版本
 多线程，支持GPU训练
 
-## 编译环境
+## Windows编译环境
 * cmake
 * Visual Studio 2019
 * PyTorch或者LibTorch
 
-目前只在Windows上测试过，需要安装[PyTorch](https://pytorch.org)或者LibTorch。PyTorch自带Release版本，LibTorch有[Release](https://download.pytorch.org/libtorch/cu102/libtorch-win-shared-with-deps-1.9.1%2Bcu102.zip)和[Debug](https://download.pytorch.org/libtorch/cu102/libtorch-win-shared-with-deps-debug-1.9.1%2Bcu102.zip)两个版本。如果需要调试，则需要安装LibTorch的Debug版本。不能用Release版本进行调试，可能会出现一些奇怪的bug。建议将不同版本的路径都加入环境变量，例如新建环境变量`libtorch`和`libtorch_debug`分别指向Release版本和Debug版本的路径，切换的时候就比较方便。cmd里面切换版本
+需要安装[PyTorch](https://pytorch.org)或者LibTorch。PyTorch自带Release版本，LibTorch有[Release](https://download.pytorch.org/libtorch/cu102/libtorch-win-shared-with-deps-1.9.1%2Bcu102.zip)和[Debug](https://download.pytorch.org/libtorch/cu102/libtorch-win-shared-with-deps-debug-1.9.1%2Bcu102.zip)两个版本。如果需要调试，则需要安装LibTorch的Debug版本。不能用Release版本进行调试，可能会出现一些奇怪的bug。建议将不同版本的路径都加入环境变量，例如新建环境变量`libtorch`和`libtorch_debug`分别指向Release版本和Debug版本的路径，切换的时候就比较方便。cmd里面切换版本
 ```
 set PATH=%libtorch%\bin;%libtorch%\lib;%PATH%
 ```
@@ -22,6 +22,9 @@ D:\ProgramFiles\Anaconda3\Lib\site-packages\torch\
 ```
 PATH=%libtorch_debug%\bin;%libtorch_debug%\lib;%PATH%
 ```
+
+## Linux
+[Google Colab jupyter notebook](https://colab.research.google.com/drive/16XQ1wvV9wjYP_v3Tv3EfEv7p_wI2hVIp?usp=sharing)
 
 ## 出牌规则
 [botzone平台上的FightTheLandlord](https://wiki.botzone.org.cn/index.php?title=FightTheLandlord)
