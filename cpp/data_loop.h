@@ -3,6 +3,7 @@
 
 #include <thread>
 #include <queue>
+#include "util.h"
 #include "game.h"
 #include "model_locker.h"
 

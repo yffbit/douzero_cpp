@@ -4,7 +4,6 @@
 #include <filesystem>
 #include <ctime>
 #include <cmath>
-#include "util.h"
 #include "data_loop.h"
 using std::printf;
 namespace fs = std::filesystem;

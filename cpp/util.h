@@ -7,6 +7,8 @@
 #include <atomic>
 #include <string>
 #include <chrono>
+#include <torch/torch.h>
+#include <torch/script.h>
 using namespace std;
 
 class Timer {
